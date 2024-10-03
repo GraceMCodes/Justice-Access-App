@@ -1,5 +1,4 @@
 # Justice-Access-App
-<<<<<<< HEAD
 
 justice-access-app/
 └── backend/
@@ -10,7 +9,8 @@ justice-access-app/
     ├── db.js
     ├── server.js
     └── .env
-=======
+
+    
 This is the justice app and this features include:
 
 Key Features
@@ -26,4 +26,12 @@ Frontend: React (for a web app) or React Native (for a mobile app).
 Backend: Node.js with Express.js.
 Database: mysql (for storing user data, cases, etc.).
 Authentication: JSON Web Tokens (JWT) for user sessions.
->>>>>>> 1d3acf54c5816c78c2f727db18019adf852a9f4f
+
+I installed the following;
+express: Web framework for Node.js.
+sequelize: Promise-based ORM for Node.js.
+mysql2: MySQL client for Node.js.
+bcryptjs: For hashing passwords.
+jsonwebtoken: For creating JSON Web Tokens.
+dotenv: For managing environment variables.
+cors: Middleware for enabling CORS.
