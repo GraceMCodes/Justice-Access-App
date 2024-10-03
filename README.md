@@ -12,5 +12,5 @@ User Profile: Users can manage their personal information and cases.
 Tech Stack
 Frontend: React (for a web app) or React Native (for a mobile app).
 Backend: Node.js with Express.js.
-Database: MongoDB (for storing user data, cases, etc.).
+Database: mysql (for storing user data, cases, etc.).
 Authentication: JSON Web Tokens (JWT) for user sessions.
