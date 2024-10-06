@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const sequelize = require('./db');
-const authRoutes = require('./routes/auth');
+const sequelize = require('db');
+const authRoutes = require('auth');
 
 dotenv.config();
 
