@@ -9,8 +9,18 @@ justice-access-app/
     ├── db.js
     ├── server.js
     └── .env
-
     
+justice-access-app/
+└── frontend/
+    ├── src/
+    │   ├── App.css
+    │   ├── api.js
+    │   ├── App.js
+    │   ├── Register.js
+    │   ├── Login.js
+    │   └── index.js
+
+
 This is the justice app and this features include:
 
 Key Features

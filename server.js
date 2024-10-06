@@ -1,11 +1,25 @@
-const { Sequelize } = require('sequelize');
+const express = require('express');
+const cors = require('cors');
 const dotenv = require('dotenv');
+const sequelize = require('./db');
+const authRoutes = require('./routes/auth');
 
 dotenv.config();
-// this will connect with my .env file
-const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-  host: process.env.DB_HOST,
-  dialect: 'mysql',
-});
 
-module.exports = sequelize;
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+sequelize.sync()
+  .then(() => {
+    console.log('Database synced');
+  })
+  .catch(err => {
+    console.error('Database sync error:', err);
+  });
+
+app.use('/api/auth', authRoutes);
+
+app.listen(5000, () => {
+  console.log('Server is running on http://localhost:5000');
+});
